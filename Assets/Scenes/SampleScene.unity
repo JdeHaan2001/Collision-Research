@@ -709,7 +709,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &467989912
 GameObject:
@@ -982,6 +982,76 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547226746}
   m_CullTransparentMesh: 1
+--- !u!1 &567370468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 567370469}
+  - component: {fileID: 567370471}
+  - component: {fileID: 567370470}
+  m_Layer: 0
+  m_Name: TestManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &567370469
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567370468}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 153.05875, y: 421.83566, z: 0.055801123}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &567370470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567370468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7ce81f5224faf445a0d8f5dbef6840f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objSpawner: {fileID: 382751329}
+  fpsText: {fileID: 135487238}
+  averageFPSText: {fileID: 1907054713}
+  frameCountText: {fileID: 33112539}
+  objectTypeText: {fileID: 731527285}
+  objectCountText: {fileID: 89404606}
+  isRecordingText: {fileID: 467989914}
+  totalRecordedFramesText: {fileID: 676240217}
+  collisionTypeText: {fileID: 1829924812}
+--- !u!114 &567370471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567370468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8314555dbc75144d927e904aaa5b53a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objSpawner: {fileID: 382751329}
+  TestName: Test
+  TestDescription: 
+  TestLengthInFrames: 500
 --- !u!1 &585040432
 GameObject:
   m_ObjectHideFlags: 0
@@ -1320,7 +1390,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &676240215
 GameObject:
@@ -1549,7 +1619,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &731527283
 GameObject:
@@ -1698,8 +1768,6 @@ GameObject:
   - component: {fileID: 939473623}
   - component: {fileID: 939473622}
   - component: {fileID: 939473621}
-  - component: {fileID: 939473625}
-  - component: {fileID: 939473626}
   m_Layer: 5
   m_Name: PerformanceDisplay
   m_TagString: Untagged
@@ -1782,50 +1850,13 @@ RectTransform:
   m_Children:
   - {fileID: 1862069762}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &939473625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 939473620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8314555dbc75144d927e904aaa5b53a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objSpawner: {fileID: 382751329}
-  TestName: Test
-  TestDescription: 
-  TestLengthInFrames: 500
---- !u!114 &939473626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 939473620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7ce81f5224faf445a0d8f5dbef6840f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objSpawner: {fileID: 382751329}
-  fpsText: {fileID: 135487238}
-  averageFPSText: {fileID: 1907054713}
-  frameCountText: {fileID: 33112539}
-  objectTypeText: {fileID: 731527285}
-  objectCountText: {fileID: 89404606}
-  isRecordingText: {fileID: 467989914}
-  totalRecordedFramesText: {fileID: 676240217}
-  collisionTypeText: {fileID: 1829924812}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1908,7 +1939,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1289901286
 GameObject:
@@ -2005,7 +2036,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1434347440
 GameObject:
