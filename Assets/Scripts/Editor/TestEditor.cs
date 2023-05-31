@@ -20,10 +20,5 @@ public class TestEditor : Editor
             if (GUILayout.Button("Start Recording"))
                 testManager.StartRecordingCoroutine();
         }
-        //else
-        //{
-        //    if (GUILayout.Button("Stop Recording"))
-        //        testManager.StopRecording();
-        //}
     }
 }
