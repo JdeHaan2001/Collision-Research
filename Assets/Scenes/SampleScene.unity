@@ -1049,8 +1049,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objSpawner: {fileID: 382751329}
-  TestName: Test
-  TestDescription: 
+  TestName: Double Check
+  TestDescription: Double checking functionality
   TestLengthInFrames: 500
 --- !u!1 &585040432
 GameObject:
