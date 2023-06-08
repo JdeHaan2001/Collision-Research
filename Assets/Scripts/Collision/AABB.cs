@@ -5,10 +5,9 @@ using System.Linq;
 
 public class AABB : MonoBehaviour
 {
-    public AABB otherColider;
-
     [HideInInspector]
     public Bounds objBounds { get; set; }
+    [HideInInspector]
     public List<AABB> trackedColliders;
 
     private void Start()
