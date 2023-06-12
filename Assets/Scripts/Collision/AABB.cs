@@ -1,36 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
 
-public class AABB : MonoBehaviour
+public class AABB : Collision
 {
-    [HideInInspector]
-    public Bounds objBounds { get; set; }
-    [HideInInspector]
-    public List<AABB> trackedColliders;
-
-    private void Start()
-    {
-        objBounds = GetComponent<MeshRenderer>().bounds;
-        var tempArray = (AABB[]) GameObject.FindObjectsOfType(typeof(AABB));
-        trackedColliders = tempArray.ToList();
-
-        //Making sure it doesn't track itself
-        if (trackedColliders.Contains(this))
-            trackedColliders.Remove(this);
-    }
-
-    private void Update()
-    {
-        for (int i = 0; i < trackedColliders.Count; i++)
-        {
-            if (IsColliding(this, trackedColliders[i]))
-                Debug.Log("Is Colliding");
-        }
-    }
-
-    public bool IsColliding(AABB a, AABB b)
+    public override bool IsColliding(Collision a, Collision b)
     {
         Vector3 posA = a.transform.position;
         Vector3 posB = b.transform.position;
