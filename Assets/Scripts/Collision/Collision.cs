@@ -32,6 +32,7 @@ public class Collision : MonoBehaviour
 
     public virtual bool IsColliding(Collision a, Collision b)
     {
+        Debug.LogWarning("Nothing is implemented, will always return false");
         return false;
     }
 }
