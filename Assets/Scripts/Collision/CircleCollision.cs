@@ -2,17 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CircleCollision : MonoBehaviour
+public class CircleCollision : Collision
 {
-    // Start is called before the first frame update
-    void Start()
+    public override bool IsColliding(Collision a, Collision b)
     {
-        
-    }
+        Vector3 posA = a.transform.position;
+        Vector3 posB = b.transform.position;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Vector3 sizeA = a.objBounds.extents;
+        Vector3 sizeB = b.objBounds.extents;
+
+        Vector3 deltaVector = posB - posA;
+
+        if (deltaVector.magnitude < sizeA.x + sizeB.x)
+            return true;
+        else
+            return false;
     }
 }
