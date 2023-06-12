@@ -18,9 +18,7 @@ public class AABB : MonoBehaviour
 
         //Making sure it doesn't track itself
         if (trackedColliders.Contains(this))
-        {
             trackedColliders.Remove(this);
-        }
     }
 
     private void Update()
