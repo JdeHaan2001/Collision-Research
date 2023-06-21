@@ -25,6 +25,10 @@ public class Data
         TestData = pData;
     }
 
+    /// <summary>
+    /// Returns the average FPS of the test
+    /// </summary>
+    /// <returns></returns>
     public float GetAverageRecordedFPS()
     {
         float totalFPS = 0;
@@ -33,5 +37,19 @@ public class Data
             totalFPS += data.FPS;
 
         return totalFPS / TestData.Count;
+    }
+
+    /// <summary>
+    /// Returns the average frame length of the test in seconds
+    /// </summary>
+    /// <returns></returns>
+    public float GetAverageFrameLength()
+    {
+        float totalFrameLength = 0;
+
+        foreach (FrameData data in TestData)
+            totalFrameLength += data.FrameLength;
+
+        return totalFrameLength / TestData.Count;
     }
 }
