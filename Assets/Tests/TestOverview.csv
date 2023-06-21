@@ -5,3 +5,5 @@ CubeUnityColliderTest2, 50 cubes with unity collider, 1000, 50, Cube, UnityBoxCo
 CubeUnityColliderTest3, 100 cubes with unity collider, 1000, 100, Cube, UnityBoxCollider, 351.9085, 0.00291363
 CubeUnityColliderTest4, 500 cubes with unity collider, 1000, 500, Cube, UnityBoxCollider, 316.9274, 0.003200803
 CubeUnityColliderTest5, 1000 cubes with unity collider, 1000, 1000, Cube, UnityBoxCollider, 284.5529, 0.0035597
+SphereUnityColliderTest1, 2 cubes with unity collider, 1000, 2, Sphere, UnitySphereCollider, 359.3383, 0.002834038
+SphereUnityColliderTest2, 50 cubes with unity collider, 1000, 50, Sphere, UnitySphereCollider, 306.1949, 0.003404254
