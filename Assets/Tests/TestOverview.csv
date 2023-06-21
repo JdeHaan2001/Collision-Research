@@ -10,3 +10,4 @@ SphereUnityColliderTest2, 50 spheres with unity collider,1000,50, Sphere, UnityS
 SphereUnityColliderTest3, 100 spheres with unity collider,1000,100, Sphere, UnitySphereCollider,342.1896,0.002989588
 SphereUnityColliderTest4, 500 spheres with unity collider,1000,500, Sphere, UnitySphereCollider,315.4112,0.003219533
 SphereUnityColliderTest5, 1000 spheres with unity collider,1000,1000, Sphere, UnitySphereCollider,278.6945,0.003684667
+CubeCustomAABBTest1, 2 cubes with custom AABB, 1000, 2, Cube, CustomAABB, 361.8693, 0.002813233
