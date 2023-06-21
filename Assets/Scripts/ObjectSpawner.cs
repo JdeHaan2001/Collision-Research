@@ -17,6 +17,8 @@ public class ObjectSpawner : MonoBehaviour
     public ObjectType ObjType;
     public CollisionType CollisionType;
     public int AmountOfObjects;
+    public Vector3 RandomPositionMin = new Vector3(-20, -20, -20);
+    public Vector3 RandomPositionMax = new Vector3(20, 20, 20);
 
     private void Start()
     {
@@ -38,8 +40,10 @@ public class ObjectSpawner : MonoBehaviour
         {
             for (int i = 0; i < AmountOfObjects; i++)
             {
+                Vector3 position = new Vector3(Random.Range(RandomPositionMin.x, RandomPositionMax.x), Random.Range(RandomPositionMin.y, RandomPositionMax.y), Random.Range(RandomPositionMin.z, RandomPositionMax.z));
                 GameObject obj = GameObject.CreatePrimitive(pType);
                 obj.transform.parent = pParent;
+                obj.transform.position = position;
 
                 Destroy(obj.GetComponent<Collider>());
                 obj.AddComponent<AABB>();
@@ -49,8 +53,10 @@ public class ObjectSpawner : MonoBehaviour
         {
             for (int i = 0; i < AmountOfObjects; i++)
             {
+                Vector3 position = new Vector3(Random.Range(RandomPositionMin.x, RandomPositionMax.x), Random.Range(RandomPositionMin.y, RandomPositionMax.y), Random.Range(RandomPositionMin.z, RandomPositionMax.z));
                 GameObject obj = GameObject.CreatePrimitive(pType);
                 obj.transform.parent = pParent;
+                obj.transform.position = position;
 
                 Destroy(obj.GetComponent<Collider>());
                 obj.AddComponent<CircleCollision>();
@@ -60,8 +66,10 @@ public class ObjectSpawner : MonoBehaviour
         {
             for (int i = 0; i < AmountOfObjects; i++)
             {
+                Vector3 position = new Vector3(Random.Range(RandomPositionMin.x, RandomPositionMax.x), Random.Range(RandomPositionMin.y, RandomPositionMax.y), Random.Range(RandomPositionMin.z, RandomPositionMax.z));
                 GameObject obj = GameObject.CreatePrimitive(pType);
                 obj.transform.parent = pParent;
+                obj.transform.position = position;
             }
         }
     }
