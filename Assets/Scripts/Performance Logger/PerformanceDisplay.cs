@@ -36,6 +36,10 @@ public class PerformanceDisplay : MonoBehaviour
 
         frameRate.OnStartRecording += StartRecording;
         frameRate.OnStopRecording += StopRecording;
+
+        objectTypeText.text = objSpawner.ObjType.ToString();
+        objectCountText.text = objSpawner.AmountOfObjects.ToString();
+        collisionTypeText.text = objSpawner.CollisionType.ToString();
     }
 
     private void LateUpdate()
@@ -48,10 +52,7 @@ public class PerformanceDisplay : MonoBehaviour
         fpsText.text = frameRate.currentFPS.ToString();
         averageFPSText.text = frameRate.GetAverageFPS().ToString();
         frameCountText.text = frameRate.TotalFrameCount.ToString();
-        objectTypeText.text = objSpawner.ObjType.ToString();
-        objectCountText.text = objSpawner.AmountOfObjects.ToString();
         totalRecordedFramesText.text = frameRate.totalRecordedFrames.ToString();
-        collisionTypeText.text = objSpawner.CollisionType.ToString();
     }
 
     private void StartRecording()
