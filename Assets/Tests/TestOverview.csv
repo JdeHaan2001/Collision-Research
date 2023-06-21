@@ -8,3 +8,4 @@ CubeUnityColliderTest5, 1000 cubes with unity collider, 1000, 1000, Cube, UnityB
 SphereUnityColliderTest1, 2 cubes with unity collider, 1000, 2, Sphere, UnitySphereCollider, 359.3383, 0.002834038
 SphereUnityColliderTest2, 50 cubes with unity collider, 1000, 50, Sphere, UnitySphereCollider, 306.1949, 0.003404254
 SphereUnityColliderTest3, 100 cubes with unity collider, 1000, 100, Sphere, UnitySphereCollider, 342.1896, 0.002989588
+SphereUnityColliderTest4, 500 cubes with unity collider, 1000, 500, Sphere, UnitySphereCollider, 315.4112, 0.003219533
