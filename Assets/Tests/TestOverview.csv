@@ -1,2 +1,2 @@
-Test Name, Test Description, Frames Recorded, Object Count, Object Type, Collision Type, Average FPS
-Base Test, Base Test without any objects, 1000, 0, Cube, UnitySphereCollider, 377.9266
+Test Name, Test Description, Frames Recorded, Object Count, Object Type, Collision Type, Average FPS, Average Frame Length
+Base Test, Base Test without any objects, 1000, 0, Cube, UnitySphereCollider, 387.2052, 0.002628229
