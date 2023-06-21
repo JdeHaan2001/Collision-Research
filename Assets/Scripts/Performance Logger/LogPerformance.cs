@@ -58,12 +58,12 @@ public static class LogPerformance
         if (!File.Exists(filePath))
         {
             TextWriter writer = new StreamWriter(filePath, false);
-            writer.WriteLine("Test Name, Test Description, Frames Recorded, Object Count, Object Type, Collision Type, Average FPS");
+            writer.WriteLine("Test Name, Test Description, Frames Recorded, Object Count, Object Type, Collision Type, Average FPS, Average Frame Length");
             writer.Close();
         }
 
         TextWriter textWriter = new StreamWriter(filePath, true);
-        textWriter.WriteLine($"{pData.TestName}, {pData.TestDescription}, {pData.RecordedFrames}, {pData.TotalObjects}, {pData.ObjType}, {pData.CollisionType}, {pData.GetAverageRecordedFPS()}");
+        textWriter.WriteLine($"{pData.TestName}, {pData.TestDescription}, {pData.RecordedFrames}, {pData.TotalObjects}, {pData.ObjType}, {pData.CollisionType}, {pData.GetAverageRecordedFPS()}, {pData.GetAverageFrameLength()}");
         textWriter.Close();
 
         Debug.Log("Done Logging Test");
