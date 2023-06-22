@@ -16,3 +16,4 @@ CubeCustomAABBTest3, 100 cubes with custom AABB, 1000, 100, Cube, CustomAABB, 12
 CubeCustomAABBTest4, 500 cubes with custom AABB, 1000, 500, Cube, CustomAABB, 7.797497, 0.1284578
 CubeCustomAABBTest5, 1000 cubes with custom AABB, 1000, 1000, Cube, CustomAABB, 1.915252, 0.5221864
 SphereCustomCircleTest1, 2 spheres with custom circle collision, 1000, 2, Sphere, CustomSphere, 371.1498, 0.002735719
+SphereCustomCircleTest2, 50 spheres with custom circle collision, 1000, 50, Sphere, CustomSphere, 257.6963, 0.003921122
