@@ -19,3 +19,4 @@ SphereCustomCircleTest1, 2 spheres with custom circle collision, 1000, 2, Sphere
 SphereCustomCircleTest2, 50 spheres with custom circle collision, 1000, 50, Sphere, CustomSphere, 257.6963, 0.003921122
 SphereCustomCircleTest3, 100 spheres with custom circle collision, 1000, 100, Sphere, CustomSphere, 135.3779, 0.007421511
 SphereCustomCircleTest4, 500 spheres with custom circle collision, 1000, 500, Sphere, CustomSphere, 8.277726, 0.1208255
+SphereCustomCircleTest5, 1000 spheres with custom circle collision, 1000, 1000, Sphere, CustomSphere, 2.081423, 0.4804698
