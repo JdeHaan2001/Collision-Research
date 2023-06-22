@@ -638,7 +638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2199004279732190879, guid: 7ab67b3d118fd0f488c1b7d8fd14851c, type: 3}
       propertyPath: AmountOfObjects
-      value: 2
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 2199004279732190879, guid: 7ab67b3d118fd0f488c1b7d8fd14851c, type: 3}
       propertyPath: RandomPositionMax.x
@@ -759,7 +759,7 @@ PrefabInstance:
       objectReference: {fileID: 676240217}
     - target: {fileID: 7283742175974789755, guid: 9a0d2e2ae2e333a4bbf76f8f436eb6da, type: 3}
       propertyPath: TestName
-      value: CubeUnityColliderTest1
+      value: CubeUnityColliderTest5
       objectReference: {fileID: 0}
     - target: {fileID: 7283742175974789755, guid: 9a0d2e2ae2e333a4bbf76f8f436eb6da, type: 3}
       propertyPath: objSpawner
@@ -767,7 +767,7 @@ PrefabInstance:
       objectReference: {fileID: 382751329}
     - target: {fileID: 7283742175974789755, guid: 9a0d2e2ae2e333a4bbf76f8f436eb6da, type: 3}
       propertyPath: TestDescription
-      value: Base Test without any objects
+      value: 1000 cubes with unity collider
       objectReference: {fileID: 0}
     - target: {fileID: 7283742175974789755, guid: 9a0d2e2ae2e333a4bbf76f8f436eb6da, type: 3}
       propertyPath: TestLengthInFrames
